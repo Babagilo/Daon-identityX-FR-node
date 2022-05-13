@@ -10,7 +10,7 @@ Download the current release [here](https://github.com/JBeloncik/idx-auth-reques
 
 - Copy the jar file into the <am-deployed-dir>/WEB-INF/lib directory
 - Restart the web container
--The nodes will then appear in the authentication trees components palette.
+- The nodes will then appear in the authentication trees components palette.
 
 ## USING THE NODES IN YOUR TREE ##
 

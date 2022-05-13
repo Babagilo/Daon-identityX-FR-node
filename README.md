@@ -8,7 +8,9 @@ Daon, [www.daon.com](www.daon.com), is an innovator in developing and deploying 
 ## Installation ##
 Download the current release [here](https://github.com/JBeloncik/idx-auth-request-node/releases/latest)
 
-Copy the jar file into the ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed.  Restart the web container to pick up the new node.  The nodes will then appear in the authentication trees components palette.
+- Copy the jar file into the <am-deployed-dir>/WEB-INF/lib directory
+- Restart the web container
+-The nodes will then appear in the authentication trees components palette.
 
 ## USING THE NODES IN YOUR TREE ##
 

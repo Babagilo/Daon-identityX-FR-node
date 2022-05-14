@@ -15,7 +15,7 @@ Download the current release [here](https://github.com/JBeloncik/idx-auth-reques
 ## USING THE NODES IN YOUR TREE ##
 
 ### There are 6 nodes included ###
-	
+
 | Node | Description |
 | --- | --- |
 | **IdentityX Check Enrollment Status** | This node makes a REST API call to IdentityX to check whether the username extracted from the "Shared State" is enrolled. This node contains the configuration parameters for the IdentityX Rest Services, so it is required to be added to the tree in order for the other IdentityX nodes to work. |
@@ -29,29 +29,43 @@ Download the current release [here](https://github.com/JBeloncik/idx-auth-reques
 The nodes must be configured to connect to an IdentityX server. Contact your Daon representative for connection details.
 
 ### Configuration Parameters ###
-IdentityX Check Enrollment Status contains the following configurable parameters:
-- **pathToKeyStore** full path to the .jks keystore file
-- **pathToCredentialProperties** full path to the credential.properties file
-- **jksPassword** password for the .jks keystore file
-- **keyAlias** key alias used in the .jks keystore
-- **keyPassword** key password for the .jks keystore
+<table>
+	<tr> <td>Node</td> <td>Parameters</td> </tr>
+	<tr> <td>IdentityX Check Enrollment Status 
+		<br><br>
+		**Note**: The Key Store and Credential Properties files should be retrieved from your Daon IdentityX instance. Please reach out to Daon support for help getting these files.</td>
+		<td><dl>    
+			<dt>pathToKeyStore</dt><dd> full path to the .jks keystore file </dd>
+                        <dt>pathToCredentialProperties</dt><dd> full path to the credential.properties file </dd>
+			<dt>jksPassword</dt><dd> password for the .jks keystore file </dd>
+			<dt>keyAlias</dt><dd> key alias used in the .jks keystore </dd>
+			<dt>keyPassword</dt><dd> key password for the .jks keystore </dd>
+			</dl></td></tr>
+	<tr><td>IdentityX Auth Request Initiator</td>
+		<td><dl>    
+			<dt> policyName</dt><dd> name of the authentication policy which should be used </dd>
+			<dt> applicationId</dt><dd> name of the application which should be used </dd>
+                        <dt> isFidoRequest</dt><dd> whether to generate a FIDO or traditional IdentityX authentication request</dd>
+		        <dt>sendPushNotification</dt><dd> whether a push notification should be sent by the IdentityX server </dd></dl>                   </td></tr>
+	<tr><td>IdentityX Mobile Auth Request</td>
+		<td> <dl><dt>policyName</dt><dd> name of the authentication policy which should be used</dd>
+			<dt>applicationId</dt><dd> name of the application which should be used</dd>
+			<dt>transactionDescription</dt><dd> Description used in the IdentityX Authentication Request</dd></dl></td></tr>
+	<tr><td>IdentityX Mobile Auth Request Validate</td>
+		<td><dl><dt>expectedStatus</dt><dd> IdentityX Authentication Request status that is returned once saved to the system (COMPLETED_SUCCESSFULLY or PENDING)</dd>
+			</dl></td></tr>
+</table>
 
-**Note**: The Key Store and Credential Properties files should be retrieved from your Daon IdentityX instance. Please 
-reach out to Daon support for help getting these files.
 
-IdentityX Auth Request Initiator contains the following configurable parameters:
-- **policyName** name of the authentication policy which should be used
-- **applicationId** name of the application which should be used
-- **isFidoRequest** whether to generate a FIDO or traditional IdentityX authentication request
-- **sendPushNotification** whether a push notification should be sent by the IdentityX server
 
-IdentityX Mobile Auth Request contains the following configurable parameters:
-- **policyName** name of the authentication policy which should be used
-- **applicationId** name of the application which should be used
-- **transactionDescription** Description used in the IdentityX Authentication Request.
 
-IdentityX Mobile Auth Request Validate contains the following configurable parameters:
-- **expectedStatus** IdentityX Authentication Request status that is returned once saved to the system (COMPLETED_SUCCESSFULLY or PENDING)
+
+
+
+
+
+
+
 
 
 

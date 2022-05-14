@@ -25,7 +25,6 @@ Download the current release [here](https://github.com/JBeloncik/idx-auth-reques
 | **IdentityX Mobile Auth Request Validate** | This node accepts a signed authentication request from a mobile device and makes a REST API call to IdentityX to validate the signed authentication request.
 | **IdentityX Sponsor User** | This node enables sponsorship (enrollment) of an end user.
 	
-
 ### CONNECTING TO AN IDENTITYX SERVER ###
 The nodes must be configured to connect to an IdentityX server. Contact your Daon representative for connection details.
 

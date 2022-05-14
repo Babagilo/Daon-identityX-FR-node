@@ -15,16 +15,16 @@ Download the current release [here](https://github.com/JBeloncik/idx-auth-reques
 ## USING THE NODES IN YOUR TREE ##
 
 ### There are 6 nodes included ###
-- **IdentityX Check Enrollment Status** This node makes a REST API call to IdentityX to ensure the username provided is enrolled. This node contains the configuration parameters for the IdentityX Rest Services, so it is required to be added to the tree in order for the other nodes to work.
-- **IdentityX Auth Request Initiator** This node makes a REST API call to IdentityX to generate an authentication request for an 
+1. **IdentityX Check Enrollment Status** This node makes a REST API call to IdentityX to ensure the username provided is enrolled. This node contains the configuration parameters for the IdentityX Rest Services, so it is required to be added to the tree in order for the other nodes to work.
+2. **IdentityX Auth Request Initiator** This node makes a REST API call to IdentityX to generate an authentication request for an 
 out of band authentication flow.
-- **IdentityX Auth Request Decision** This node makes a REST API call to IdentityX to check the status of an authentication request
+3. **IdentityX Auth Request Decision** This node makes a REST API call to IdentityX to check the status of an authentication request
  for an out of band authentication flow.
-- **IdentityX Mobile Auth Request** This node makes a REST API call to IdentityX to generate an authentication 
+4. **IdentityX Mobile Auth Request** This node makes a REST API call to IdentityX to generate an authentication 
 request for an end user authenticating on a mobile device, and passes it to the mobile device.
-- **IdentityX Mobile Auth Request Validate** This node accepts a signed authentication request from a mobile device 
+5. **IdentityX Mobile Auth Request Validate** This node accepts a signed authentication request from a mobile device 
  and makes a REST API call to IdentityX to validate the signed authentication request.
-- **IdentityX Sponsor User** This node enables sponsorship (enrollment) of an end user.
+6. **IdentityX Sponsor User** This node enables sponsorship (enrollment) of an end user.
 
 ### CONNECTING TO AN IDENTITYX SERVER ###
 The nodes must be configured to connect to an IdentityX server. Contact your Daon representative for connection details.

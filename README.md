@@ -18,7 +18,7 @@ Download the current release [here](https://github.com/JBeloncik/idx-auth-reques
 	
 | Node | Description |
 | --- | --- |
-| **IdentityX Check Enrollment Status** | This node makes a REST API call to IdentityX to ensure the username provided is enrolled. This node contains the configuration parameters for the IdentityX Rest Services, so it is required to be added to the tree in order for the other nodes to work. |
+| **IdentityX Check Enrollment Status** | This node makes a REST API call to IdentityX to check whether the username extracted from the "Shared State" is enrolled. This node contains the configuration parameters for the IdentityX Rest Services, so it is required to be added to the tree in order for the other IdentityX nodes to work. |
 | **IdentityX Auth Request Initiator** | This node makes a REST API call to IdentityX to generate an authentication request for an out of band authentication flow. |
 | **IdentityX Auth Request Decision** | This node makes a REST API call to IdentityX to check the status of an authentication request for an out of band authentication flow.
 | **IdentityX Mobile Auth Request** | This node makes a REST API call to IdentityX to generate an authentication request for an end user authenticating on a mobile device, and passes it to the mobile device.

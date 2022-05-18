@@ -79,9 +79,9 @@ The image below shows an example authentication tree using IdentityX nodes in a 
 
 ![ScreenShot](./images/example_mobile.png)
 
-##### Component configuration #####
+##### Nodes configuration #####
 <table width=80%" border="1px" cellpadding="2" cellspacing="2" style="border-collapse: collapse;">
-	<tr bgcolor="#D3D3D3"><th colspan="2" align="left">IdentityX Check Enrollment Status</th></tr>
+	<tr bgcolor="#D3D3D3"><th colspan="2" align="left">$$$$$$$$$$$$$$$$$$$$$$$</th></tr>
 	<tr><td>Node Name</td><td>IdentityX Check Enrollment Status</td></tr>
 	<tr><td width="30%">JKS KeyStore file location</td><td>/app/tomcat/webapps/openam/WEB-INF/classes/IDX-nodes/key.wrapper.jks</td></tr>
 	<tr><td>credential.properties file location</td><td>/app/tomcat/webapps/openam/WEB-INF/classes/IDX-nodes/credential.properties</td></tr>
@@ -89,12 +89,12 @@ The image below shows an example authentication tree using IdentityX nodes in a 
 	<tr><td>Key Alias</td><td>idx-am-nodes-symmetric</td></tr>
 	<tr><td>Key Password</td><td>password</td></tr>
 	<tr><td>userIdAttribute</td><td></td></tr>
-	<tr bgcolor="#D3D3D3"><th colspan="2" align="left">IdentityX Mobile Auth Request</th></tr>
+	<tr bgcolor="#D3D3D3"><th colspan="2" align="left">$$$$$$$$$$$$$$$$$$$$$$$$$$$</th></tr>
 	<tr><td>Node Name</td><td>IdentityX Mobile Auth Request</td></tr>
 	<tr><td>Policy Name</td><td>FidoAuthPolicy</td></tr>
 	<tr><td>Application ID</td><td>FidoApplication</td></tr>
 	<tr><td>Transaction Description</td><td>UAF FIDO Transaction</td></tr>
-	<tr bgcolor="#D3D3D3"><th colspan="2" align="left">IdentityX Mobile Auth Request Validate</th></tr>
+	<tr bgcolor="#D3D3D3"><th colspan="2" align="left">$$$$$$$$$$$$$$$$$$$$$$$$$$</th></tr>
 	<tr><td>Node Name</td><td>IdentityX Mobile Auth Request Validate</td></tr>
 	<tr><td>Expected AuthRequest Status</td><td>COMPLETED_SUCCESSFULLY</td></tr>	
 </table>
